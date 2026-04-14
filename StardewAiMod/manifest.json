@@ -1,0 +1,10 @@
+{
+  "Name": "Stardew AI Chat",
+  "Author": "Madden + Anna",
+  "Version": "1.0.0",
+  "Description": "An in-game AI chatbot mod.",
+  "UniqueID": "MaddenAnna.StardewAIChat",
+  "EntryDll": "StardewAiMod.dll",
+  "MinimumApiVersion": "4.0.0",
+  "UpdateKeys": []
+}
