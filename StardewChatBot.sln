@@ -1,0 +1,24 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.2.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StardewAiMod", "StardewAiMod\StardewAiMod.csproj", "{C9ED1B26-5D5A-5A71-D43A-516FD0C9BBEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9ED1B26-5D5A-5A71-D43A-516FD0C9BBEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9ED1B26-5D5A-5A71-D43A-516FD0C9BBEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9ED1B26-5D5A-5A71-D43A-516FD0C9BBEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9ED1B26-5D5A-5A71-D43A-516FD0C9BBEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FB6252A5-B033-438F-94D2-870D4CFCA74D}
+	EndGlobalSection
+EndGlobal

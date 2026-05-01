@@ -14,10 +14,8 @@ namespace StardewAiMod
 
         public override void Entry(IModHelper helper)
         {
-            // Load button image
             this.buttonTexture = helper.ModContent.Load<Texture2D>("assets/chatButton.png");
 
-            // Events
             helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
             helper.Events.Display.RenderedHud += this.OnRenderedHud;
             helper.Events.Input.ButtonPressed += this.OnButtonPressed;
@@ -32,11 +30,11 @@ namespace StardewAiMod
 
         private void UpdateButtonBounds()
         {
-            int size = 64;
-            int padding = 16;
+            int size = 110;     // Bigger button
+            int padding = 20;
 
-            int x = Game1.uiViewport.Width - size - padding;
-            int y = padding + 80;
+            int x = padding; // Left side
+            int y = Game1.uiViewport.Height - size - padding; // Bottom
 
             this.buttonBounds = new Rectangle(x, y, size, size);
         }
@@ -57,6 +55,10 @@ namespace StardewAiMod
         private void OnButtonPressed(object? sender, ButtonPressedEventArgs e)
         {
             if (!Context.IsWorldReady)
+                return;
+
+            // 🚨 FIX: Prevent key input from interfering while ChatMenu is open
+            if (Game1.activeClickableMenu is ChatMenu)
                 return;
 
             // Press K → open chat menu
